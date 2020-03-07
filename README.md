@@ -1,20 +1,20 @@
 # Server-Certbot-XAMPP-Ubuntu
-Here is a guide line how to use the certbot to help you generate SSL cert and renew it automatically under the XAMPP of Ubuntu 18.04
+Here is a guideline how to use the certbot to help you generate SSL cert and renew it automatically under the XAMPP of Ubuntu 18.04
 
 ```
 Before writing this guide, 
-I was in the trouble about the certbot how to run it welll on the XAMPP of Ubuntu,
-and did many and many reasearch and read the certbot doc deeply,
+I was in the trouble about the certbot how to run it well on the XAMPP of Ubuntu,
+and did many and many research and read the certbot doc deeply,
 I solved the issue, the apache thing by this option --apache-ctl /opt/lampp/bin/apachectl !
 ```
 
 # Let's start!
 ## 1. XAMPP Installation
 ```
-I think you have installed the xampp and it run as well, if you have not install it, you can check my repo [Server Deployment], it maybe help you.
+I think you have installed the xampp and it runs as well, if you have not installed it, you can check my repo [Server Deployment], it may be help you.
 ```
 
-## 2. Certbot Intallation
+## 2. Certbot Installation
 ```
 sudo apt-get update
 sudo apt-get install software-properties-common
@@ -29,7 +29,7 @@ sudo apt-get install certbot python-certbot-apache
 sudo service apache2 stop
 ```
 
-## 4. Comment the all ports both 40 and 443 from file(ports.conf)
+## 4. Comment all ports both 40 and 443 from the file(ports.conf)
 ```
 sudo nano /etc/apache2/ports.conf
 ------------
@@ -70,7 +70,7 @@ Include etc/extra/httpd-vhosts-le-ssl.conf #Add it here
 sudo /opt/lampp/lampp restart
 ```
 
-## 8. Finially you can the run command and following the steps of certbot to choose what you want to generate
+## 8. Finally, you can the run command and following the steps of certbot to choose what you want to generate
 ```
 sudo certbot --apache-ctl /opt/lampp/bin/apachectl
 ```
@@ -149,7 +149,7 @@ Include /etc/letsencrypt/options-ssl-apache.conf
 ------------
 ```
 
-## 12. Retart the XAMPP better again and check the site
+## 12. Restart the XAMPP better again and check the site
 ```
 sudo /opt/lampp/lampp restart
 ```
@@ -194,7 +194,7 @@ IMPORTANT NOTES:
    making regular backups of this folder is ideal.
 ```
 
-## 14.Set the crontab on every Sunday. Done !!!
+## 14.Set the crontab every Sunday. Done !!!
 ```
 sudo crontab -e
 ------------

@@ -24,6 +24,17 @@ sudo apt-get update
 sudo apt-get install certbot python-certbot-apache
 ```
 
+### Note,check the cerbot version
+```
+apt-cache policy certbot | grep Installed
+
+###Ubuntu 18.04###
+  Installed: 0.31.0-1+ubuntu18.04.1+certbot+1
+ 
+###Ubuntu 16.04###
+  Installed: 0.27.0-1~ubuntu16.04.1 > This doc tried this version but not working on 16.04
+```
+
 ## 3. Let's stop the just installed apache2, we make sure it is stopped.
 ```
 sudo service apache2 stop
@@ -72,7 +83,8 @@ sudo /opt/lampp/lampp restart
 
 ## 8. Finally, you can the run command and following the steps of certbot to choose what you want to generate
 ```
-sudo certbot --apache-ctl /opt/lampp/bin/apachectl
+###Ubuntu 18.04###
+ sudo certbot --apache-ctl /opt/lampp/bin/apachectl
 ```
 
 ## 9. Here is a running log when it works

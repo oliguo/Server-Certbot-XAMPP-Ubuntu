@@ -7,10 +7,10 @@ and I cannot upgrade the OS to 18.04, so I have to try another way to do generat
 
 ## --manual --manual-auth-hook --manual-cleanup-hook
 ```
-Yup, we need use above parameters to do our jobs after I found it is helpful to generate on 16.04.
+Yup, we need to use the above parameters to do our jobs after I found it is helpful to generate on 16.04.
 ```
 
-## Let's start, install certbot first and to do same steps like on 18.04
+## Let's start, install certbot first and to do the same steps like on 18.04
 ```
 Please check the point 3,4,5,6,7
 ```
@@ -149,7 +149,7 @@ Congratulations, all renewals succeeded. The following certs have been renewed:
 root@ubuntu:/home/vtladmin# 
 ```
 
-### 5. Finally, we need update our httpd-vhosts-le-ssl.conf to update
+### 5. Finally, we need update our httpd-vhosts-le-ssl.conf
 ```
 sudo nano /opt/lampp/etc/extra/httpd-vhosts-le-ssl.conf
 

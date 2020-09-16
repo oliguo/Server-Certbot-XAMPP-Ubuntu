@@ -50,7 +50,7 @@ ErrorDocument 404 '404'
 sudo nano /opt/lampp/htdocs/abcd.com.authenticator.sh
 #----- copy and paste -----
 #!/bin/bash
-echo $CERTBOT_VALIDATION > /opt/lampp/htdocs/Project/vtl-solutions.com/.well-known/acme-challenge/$CERTBOT_TOKEN
+echo $CERTBOT_VALIDATION > /opt/lampp/htdocs/Project/abcd.com/.well-known/acme-challenge/$CERTBOT_TOKEN
 #----- copy and paste -----
 
 sudo chmod -R 777  /opt/lampp/htdocs/abcd.com.authenticator.sh

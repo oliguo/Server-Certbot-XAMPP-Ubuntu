@@ -1,5 +1,5 @@
 # Server-Certbot-XAMPP-Ubuntu
-Here is a guideline how to use the certbot to help you generate SSL cert and renew it automatically under the XAMPP of Ubuntu 18.04. [👉👉Check here for 16.04](https://github.com/oliguo/Server-Certbot-XAMPP-Ubuntu/blob/master/Ubuntu16.04/README.md)
+Here is a guideline how to use the certbot to help you generate SSL cert and renew it automatically under the XAMPP of Ubuntu 18.04 and 20.04. [👉👉Check here for 16.04](https://github.com/oliguo/Server-Certbot-XAMPP-Ubuntu/blob/master/Ubuntu16.04/README.md)
 
 ```
 Before writing this guide, 
@@ -21,7 +21,19 @@ sudo apt-get install software-properties-common
 sudo add-apt-repository universe
 sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update
+```
+
+### For 18.04
+```
 sudo apt-get install certbot python-certbot-apache
+```
+
+### For 20.04 with snap
+```
+sudo apt-get install snapd -y
+sudo snap install core; sudo snap refresh core
+sudo snap install --classic certbot
+sudo apt-get install python3-certbot-apache apache2-utils
 ```
 
 ### Note,check the cerbot version

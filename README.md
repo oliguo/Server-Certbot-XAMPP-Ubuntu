@@ -95,7 +95,6 @@ sudo /opt/lampp/lampp restart
 
 ## 8. Finally, you can the run command and following the steps of certbot to choose what you want to generate
 ```
-###Ubuntu 18.04###
  sudo certbot --apache-ctl /opt/lampp/bin/apachectl
 ```
 

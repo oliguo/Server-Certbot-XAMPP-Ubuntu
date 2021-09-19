@@ -52,7 +52,7 @@ apt-cache policy certbot | grep Installed
 sudo service apache2 stop
 ```
 
-## 4. Comment all ports both 40 and 443 from the file(ports.conf)
+## 4. Comment all ports both 80 and 443 from the file(ports.conf)
 ```
 sudo nano /etc/apache2/ports.conf
 ------------

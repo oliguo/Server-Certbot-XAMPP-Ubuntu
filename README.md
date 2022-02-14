@@ -39,6 +39,8 @@ sudo apt-get install python3-certbot-apache apache2-utils
 ### Note,check the cerbot version
 ```
 apt-cache policy certbot | grep Installed
+###Ubuntu 20.04###
+  Installed: 0.40.0-1ubuntu0.1
 
 ###Ubuntu 18.04###
   Installed: 0.31.0-1+ubuntu18.04.1+certbot+1
